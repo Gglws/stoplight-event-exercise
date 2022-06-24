@@ -61,7 +61,9 @@ if(event.target.id === 'stopButton' && stopLight.classList.contains('stop')){
   console.log(`${event.target.textContent} is on`);
 } else if(event.target.id === 'goButton' && goLight.classList.contains('go')){
   console.log(`${event.target.textContent} is on`);
-} else{ console.log(`${event.target.textContent} is off`); }
+} else if(event.target.classList.contains('button'))
+  { console.log(`${event.target.textContent} is off`); }
+
 
 })
 
